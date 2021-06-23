@@ -65,9 +65,16 @@ const Room = () => {
             value={newQuestion}
           />
           <div className="form-footer">
-            <span>
-              Para enviar uma pergunta, <button>faça seu login</button>.
-            </span>
+            {user ? (
+              <div className="user-info">
+                <img src={user.avatar} alt={user.name} />
+                <span>{user.name}</span>
+              </div>
+            ) : (
+              <span>
+                Para enviar uma pergunta, <button>faça seu login</button>.
+              </span>
+            )}
             <Button disabled={!user} type="submit">
               Enviar pergunta
             </Button>
