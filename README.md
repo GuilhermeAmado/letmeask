@@ -11,7 +11,7 @@
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/guilhermeamado/letmeask?color=835AFD">
   </a>
 
-  <img alt="GitHub" src="https://img.shields.io/github/license/lorenatoscano/letmeask?color=835AFD">
+  <img alt="GitHub" src="https://img.shields.io/github/license/guilhermeamado/letmeask?color=835AFD">
 </p>
 
 
