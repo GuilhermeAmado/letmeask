@@ -1,4 +1,6 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 import Home from './pages/Home';
 import NewRoom from './pages/NewRoom';
@@ -10,6 +12,7 @@ function App() {
   return (
     <BrowserRouter>
       <AuthContextProvider>
+        <ToastContainer />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/rooms/new" component={NewRoom} />

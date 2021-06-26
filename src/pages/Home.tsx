@@ -1,5 +1,6 @@
 import { useHistory } from 'react-router-dom';
 import { FormEvent, useState } from 'react';
+import { toast } from 'react-toastify';
 
 import illustrationImg from '../assets/images/illustration.svg';
 import logoImg from '../assets/images/logo.svg';
@@ -32,7 +33,14 @@ const Home = () => {
     const roomRef = await database.ref(`rooms/${roomCode}`).get();
 
     if (!roomRef.exists()) {
-      alert('Room does not exists!');
+      toast.warn('Não foi possível encontrar esta sala', {
+        position: 'top-right',
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        progress: undefined,
+      });
       return;
     }
 
