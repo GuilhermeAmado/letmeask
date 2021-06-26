@@ -1,46 +1,63 @@
-# Getting Started with Create React App
+<p align="center">
+   <img src="https://github.com/GuilhermeAmado/letmeask/blob/master/src/assets/images/logo.svg" alt="letmeask" width="400"/>
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img alt="GitHub top language" src="https://img.shields.io/github/languages/top/guilhermeamado/letmeask?color=835AFD">
 
-## Available Scripts
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/guilhermeamado/letmeask?color=835AFD">
+  
+  <a href="https://github.com/guilhermeamado/letmeask/commits/main">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/guilhermeamado/letmeask?color=835AFD">
+  </a>
 
-In the project directory, you can run:
+  <img alt="GitHub" src="https://img.shields.io/github/license/lorenatoscano/letmeask?color=835AFD">
+</p>
 
-### `yarn start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Sobre
+Projeto desenvolvido durante a Next Level Week Together da [Rocketseat](https://rocketseat.com.br/).
+O login é feito com o Firebase Auth, usando conta do Google.
+Os usuários podem criar salas enviar e excluir perguntas.
+O criador da sala pode administrar perguntas, marcando-as em highlight ou como respondidas, além de poder excluir perguntas.
+Para acessar uma sala com vista de administrador, basta adicionar '/admin/' antes de '/rooms/'. Exemplo: ```http://localhost:3000/admin/rooms/-Md92soeoDpFTKoOKzVC ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Acesse o projeto no ar:
+https://letmeask-cab2d.web.app/
 
-### `yarn test`
+## Tecnologias utilizadas
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- [ReactJS](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [React Router](https://reactrouter.com/)
+- [Sass](https://sass-lang.com/)
+- [Firebase auth](https://firebase.google.com/?hl=pt)
+- [Firebase realtime database](https://firebase.google.com/?hl=pt)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Como rodar
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Execute os comandos no seu terminal:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+# Clone o repositório
+$ git clone https://github.com/guilhermeamado/letmeask.git
 
-### `yarn eject`
+# Entre no repositório
+$ cd letmeask
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+# Instale as dependências
+$ yarn install
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+# Execute a aplicação
+$ yarn start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Acesse http://localhost:3000/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Milha Extra
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+As seguintes funcionalidades não abordadas durante o curso foram implementadas "por conta":
+- Notificação em forma de toast (pode ser vista quando se tenta entrar em uma sala que não existe)
+- Possibilidade de tirar highlight de uma pergunta (para o caso de uma pergunta ter sido highlighted por engano por ex.)
